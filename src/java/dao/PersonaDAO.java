@@ -13,8 +13,8 @@ public class PersonaDAO {
     protected EntityManager em;
 
     public PersonaDAO() {
-        // cogemos la configuracion "HibernateEjemplo1" del persistence.xml
-        emf = Persistence.createEntityManagerFactory("HibernateEjemplo1");
+        // cogemos la configuracion "HibernatePU" del persistence.xml
+        emf = Persistence.createEntityManagerFactory("HibernatePU");
     }
 
     private EntityManager getEntityManager() {
