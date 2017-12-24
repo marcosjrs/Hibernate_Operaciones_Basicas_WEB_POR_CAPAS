@@ -1,7 +1,15 @@
 package model;
 
-public class Persona {
+import java.io.Serializable;
+import javax.persistence.*;
+
+@Entity
+public class Persona implements Serializable {
     
+    private static final long serialVersionUID = 1L;
+    
+    @Id
+    @Column(name = "id_persona")
     private int idPersona;
     private String nombre;
     private String apellido;
